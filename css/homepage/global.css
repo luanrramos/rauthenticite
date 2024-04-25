@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #111111;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fafafa;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[src$=".png"] {
+  border-radius: 4px;
+}

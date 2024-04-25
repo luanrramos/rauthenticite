@@ -1,0 +1,15 @@
+/* Homepage */
+@import url(./homepage/global.css);
+@import url(./homepage/header.css);
+@import url(./homepage/introduction.css);
+@import url(./homepage/behavior.css);
+@import url(./homepage/incentive.css);
+@import url(./homepage/services.css);
+@import url(./homepage/about.css);
+@import url(./homepage/consultation.css);
+@import url(./homepage/footer.css);
+
+/* Components */
+@import url(utilities/components.css);
+@import url(utilities/colors.css);
+@import url(utilities/typography.css);

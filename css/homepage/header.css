@@ -1,0 +1,52 @@
+.header {
+  margin: 2rem 0;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .nav-bar-inactive {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu > a {
+    width: 40%;
+  }
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+  .nav-bar {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 370px) {
+  .header {
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-menu > a {
+    width: 100%;
+  }
+
+  .nav-bar {
+    gap: 0;
+  }
+}
