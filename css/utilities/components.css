@@ -82,6 +82,11 @@
 .underlined:hover:after {
   width: 100%;
 }
+
+.mouse-icon{
+  
+}
+
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;

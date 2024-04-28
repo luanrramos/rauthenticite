@@ -5,10 +5,6 @@
   margin: 4rem 0;
 }
 
-.main h1 {
-  /* margin-top: 1rem; */
-  /* margin-bottom: 2rem; */
-}
 .main-content {
   display: grid;
   gap: 2rem;
