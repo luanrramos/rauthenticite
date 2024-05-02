@@ -9,25 +9,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Registro de Marcas - R Authenticité</title>
 
 </head>
 
 <body>
 
-  <header class="header container" id="box-initial">
+  <header class="header container">
 
     <nav aria-label="primaria" class="nav-menu">
       <a href="#home"><img src="img/logos/logo-header.png" alt="Logo - R Authenticité"></a>
 
-      <ul class="nav-bar font-1-m cor-10">
+      <ul class="js-menu nav-bar font-1-m cor-10">
         <li><a class="underlined nav-bar-inactive" href="#como-funciona">Como Funciona</a></li>
         <li><a class="underlined nav-bar-inactive" href="#beneficios">Benefícios</a></li>
-        <li><a class="underlined nav-bar-inactive" href="#servicos">Serviços</a></li>
+        <li><a class="underlined nav-bar-inactive" href="#outros-servicos">Serviços</a></li>
         <li><a class="underlined nav-bar-inactive" href="#o-escritorio">O Escritório</a></li>
         <li><a class="botao" href="#consulta">Consulta Grátis</a></li>
 
@@ -35,9 +36,9 @@
     </nav>
   </header>
 
-  <main class="main container" id="box-initial">
-    <div class="main-content cor-10">
-      <p class="font-2-s">👋 Olá, eu me chamo Ísis Vasconcelos, prazer em te conhecer!</p>
+  <main class="main container">
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="main-content cor-10">
+      <p class="font-1-xs">👋 Olá, eu me chamo Ísis Vasconcelos, prazer em te conhecer!</p>
       <h1 class="font-1-xxl cor-10"><span class="cor-p4-linear">Transforme</span> sua marca em realidade em apenas <span class="cor-p4-linear">um</span><span class="cor-p4-linear"> minuto!</span> Pedido de registro de forma ágil e descomplicada.</h1>
       <p class="font-1-m">Solicitou, assinou e registrou. Pronto!</p>
       <div class="main-content-buttons">
@@ -66,34 +67,47 @@
   </main>
 
   <section class="como-funciona-bg">
-    <div id="como-funciona" class="como-funciona container">
-      <img class="como-funciona-detail" src="img/components/detail1.svg" alt="Detalhe ilustrando o conteúdo da seção">
-      <img class="como-funciona-arrows down" src="img/components/arrow-down.svg" alt="Seta indicando o próximo passo">
-      <img class="como-funciona-arrows up" src="img/components/arrow-up.svg" alt="Seta indicando o próximo passo">
-      <div class="como-funciona-introducao">
+
+    <div class="como-funciona container">
+      <ul data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="como-funciona-numeros  cor-1  txt-center">
+        <li>
+          <div class="font-1-xl">+<span class="number font-1-xl" data-number>555</span></div>
+          <p class="font-2-s cor-2">Marcas registradas</p>
+        </li>
+        <li>
+          <div class="font-1-xl"><span class="number font-1-xl" data-number>+99</span>%</div>
+          <p class="font-2-s cor-2">Satisfação dos clientes </p>
+        </li>
+        <li>
+          <div class="font-1-xl"><span class="number font-1-xl" data-number>100</span>%</div>
+          <p class="font-2-s cor-2">Atendimento em todo território nacional</p>
+        </li>
+        <li>
+          <div class="font-1-l"><span class="number font-1-xl" data-number>24</span>H</div>
+          <p class="font-2-s cor-2">Suporte todos os dias</p>
+        </li>
+      </ul>
+      <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="como-funciona-detail" src="img/components/detail1.svg" alt="Detalhe ilustrando o conteúdo da seção">
+      <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="como-funciona-arrows down" src="img/components/arrow-down.svg" alt="Seta indicando o próximo passo">
+      <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600" class="como-funciona-arrows up" src="img/components/arrow-up.svg" alt="Seta indicando o próximo passo">
+      <div id="como-funciona" class="como-funciona-introducao">
         <span class="font-2-m cor-p4-linear">COMO FUNCIONA?</span>
-        <h2 class="font-1-xl cor-10">Registre sua marca em apenas <span class="cor-p4">3 </span>passos</h2>
-        <p class="font-2-s cor-9">Conte com conosco para simplificar o processo de registro por você.</p>
+        <h2 class="font-1-xxl cor-10">Registre sua marca em apenas 3 passos</h2>
+        <p class="font-1-m cor-8">Conte conosco para simplificar o processo de registro por você.</p>
       </div>
 
       <ul class="como-funciona-grid container">
-        <li class="">
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="">
           <img src="img/icons/lupa.svg" alt="Lupa">
           <span class="font-1-m-b">1. Consulta de viabilidade grátis</span>
           <p class="font-1-s cor-7">Dê o primeiro passo decisivo para proteger sua marca. Aqui verificamos se sua marca está disponível para registro no seu segmento de atuação.</p>
         </li>
-        <li class="">
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="">
           <img src="img/icons/file-annotation.svg" alt="Lupa">
           <span class="font-1-m-b">2. Acompanhamento de pertinho</span>
-          <p class="font-1-s cor-7">Esteja sempre atualizado
-            sobre o progresso do seu
-            registro. Conte com nossa
-            equipe dedicada para cuidar
-            dos detalhes enquanto você
-            se concentra no seu
-            negócio.</p>
+          <p class="font-1-s cor-7">Mantenha-se constantemente informado sobre o andamento do seu registro. Confie em nossa equipe especializada enquanto você direciona sua atenção no seu negócio.</p>
         </li>
-        <li class="">
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="">
 
           <img src="img/icons/case-work.svg" alt="Lupa">
           <span class="font-1-m-b">3. Registro Feito</span>
@@ -102,13 +116,12 @@
           </p>
         </li>
       </ul>
-      <img class="mouse-icon" src="img/icons/mouse-icon.svg" alt="Mouse indicando mais conteúdos abaixo">
     </div>
   </section>
 
-  <section class="incentive">
-    <div id="beneficios" class="container">
-      <div class="incentive-grid">
+  <section id="beneficios" class="incentive">
+    <div class="container">
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="incentive-grid">
         <span class="font-2-m cor-p4-linear">UM PONTAPÉ INICIAL</span>
         <h2 class="font-1-xxl">Porque registrar <br> a sua marca?</h2>
 
@@ -143,7 +156,9 @@
 
         </ul>
       </div>
-      <img src="img/isis-vasconcelos/porque.svg" alt="Porque registrar sua marca?">
+      <!-- <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> -->
+      <img width="409" height="568" src="img/isis-vasconcelos/porque.svg" alt="Porque registrar sua marca?">
+      <!-- </div> -->
     </div>
 
   </section>
@@ -157,12 +172,12 @@
           <img src="img/logos/group-brandings.svg" alt="Brandings">
           <span class="font-2-xl cor-p4">+1.000<span class="font-1-m cor-8">marcas registradas</span></span>
         </div>
-        <a class="registro botao seta" href="#consulta">Agendar consulta grátis</a>
+        <a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="registro botao seta" href="#consulta">Agendar consulta grátis</a>
       </div>
 
       <ul class="outros-servicos-grid">
 
-        <li><a href="#consulta"><img src="img/icons/registro-patente.svg" alt="Registro de patente">
+        <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="200" href="#consulta"><img src="img/icons/registro-patente.svg" alt="Registro de patente">
             <span class="font-1-m-b">Registro de Patente</span>
             <p>Proteja sua inovação e
               tenha exclusividade no
@@ -171,7 +186,7 @@
               benefícios que ela merece.</p>
           </a>
         </li>
-        <li><a href="#consulta"><img src="img/icons/registro-direito-autoral.svg" alt="Registro de direito autoral">
+        <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400" href="#consulta"><img src="img/icons/registro-direito-autoral.svg" alt="Registro de direito autoral">
             <span class="font-1-m-b">Registro de Direito
               Autoral</span>
             <p>Valorize sua obra artística e
@@ -181,14 +196,14 @@
               imagens e mais.</p>
           </a>
         </li>
-        <li><a href="#consulta"><img src="img/icons/registro-software.svg" alt="Registro de software">
+        <li><a <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600" href="#consulta"><img src="img/icons/registro-software.svg" alt="Registro de software">
             <span class="font-1-m-b">Registro de software</span>
             <p>Proteja sua criação digital e
               fortaleça sua posição no
               mercado tecnológico.</p>
           </a>
         </li>
-        <li><a href="#consulta"><img src="img/icons/contratos-empresariais.svg" alt="Contratos empresariais">
+        <li><a <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="800" href="#consulta"><img src="img/icons/contratos-empresariais.svg" alt="Contratos empresariais">
             <span class="font-1-m-b">Contratos
               Empresariais</span>
             <p>Estabeleça relações
@@ -203,7 +218,7 @@
 
   <section class="sobre-bg">
     <div id="o-escritorio" class="sobre container">
-      <div class="sobre-descricao">
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="sobre-descricao">
         <span class="font-2-m cor-p4-linear">O ESCRITÓRIO</span>
         <h2 class="font-1-xxl">Quem somos</h2>
         <p class="font-1-m">O escritório R Authenticité Marcas e Patentes nasceu em fevereiro de 2019 com uma missão clara:
@@ -228,13 +243,13 @@
     <div>
       <div class="titulo container">
         <p class="font-2-m cor-p4">RESPOSTAS EM ATÉ 24H</p>
-        <h2 class="font-1-xxl cor-10">Registre agora</h2>
+        <h2 class="font-1-xxl cor-10">Registre já</h2>
       </div>
     </div>
 
     <div class="contato container">
       <section class="contato-dados" aria-label="Endereço">
-        <h2 class="font-1-l cor-1">Nosso contato</h2>
+        <h2 class="font-2-xl cor-1">Nosso contato</h2>
         <div class="contato-endereco font-2-s cor-2">
           <p>Atendemos todos o Brasil</p>
           <p>Presencialmente em Campina Grande - PB</p>
@@ -318,7 +333,64 @@
       <p class="footer-copy font-2-m cor-6">R Authenticité © 2024</p>
     </div>
   </footer>
-  <script src="js/animations.js"></script>
+  <script>
+    AOS.init();
+    function initScroll() {
+      const internLinks = document.querySelectorAll(".js-menu li a[href^='#']");
+
+      internLinks.forEach((link) => {
+        link.addEventListener("click", scrollToSection);
+      });
+
+      function scrollToSection(event) {
+        event.preventDefault();
+        const href = this.getAttribute("href");
+        const section = document.querySelector(href);
+
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+
+    initScroll();
+
+
+    // Animation numbers
+    const numbers = document.querySelectorAll("[data-number]");
+
+    if (numbers.length > 0) {
+      const startNumberAnimation = (element) => {
+        const number = +element.innerText;
+        const numberDivision = number / 90;
+        const animationRuntimeMS = 80;
+        let dynamicNumber = 0;
+
+        element.innerText = dynamicNumber;
+
+        const animateNumbers = setInterval(() => {
+          if (dynamicNumber < number) {
+            dynamicNumber += numberDivision;
+            element.innerText = Math.floor(dynamicNumber);
+          } else {
+            element.innerText = number;
+            clearInterval(animateNumbers);
+          }
+        }, Math.random() * animationRuntimeMS);
+      };
+
+      numbers.forEach((number) => {
+        startNumberAnimation(number);
+      });
+
+
+    }
+
+
+  </script>
+  <script src="animations.js"></script>
+
 </body>
 
 </html>

@@ -67,3 +67,10 @@
     background-position: rotate(90deg);
   }
 }
+
+@media (max-width: 600px) {
+  .sobre {
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+}

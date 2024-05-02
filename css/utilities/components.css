@@ -88,12 +88,10 @@
   width: 100%;
 }
 
-.mouse-icon {
-  position: absolute;
-  top: 85%;
-  right: 50%;
-}
 
+.txt-center {
+  text-align: center;
+}
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;

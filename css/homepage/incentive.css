@@ -84,4 +84,7 @@
   .incentive-benefits {
     flex-direction: column;
   }
+  .incentive div > span {
+    margin-top: 1rem;
+  }
 }
