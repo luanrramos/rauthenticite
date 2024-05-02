@@ -12,10 +12,10 @@
   --cor-10: #2e2e2e;
   --cor-11: #111111;
   --cor-12: #000000;
-  --cor-p1: #E04047;
-  --cor-p2: #E70003;
-  --cor-p3: #BE0003;
-  --cor-p4: #8A0002;
+  --cor-p1: #e04047;
+  --cor-p2: #e70003;
+  --cor-p3: #be0003;
+  --cor-p4: #8a0002;
   --cor-p5: #560001;
 }
 
@@ -72,4 +72,11 @@
 }
 .cor-p5 {
   color: var(--cor-p5);
+}
+
+.cor-p4-linear {
+  background: linear-gradient(to right, var(--cor-p4), var(--cor-p1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

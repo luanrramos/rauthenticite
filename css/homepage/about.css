@@ -1,0 +1,69 @@
+.sobre-bg {
+  background-image: url(../../img/components/about-bg.svg);
+  border: 1px solid red red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sobre {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  padding: 90px 0;
+  align-items: center;
+}
+
+.sobre-descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sobre-descricao a {
+  margin-top: 60px;
+}
+.selo-logo {
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  right: 70%;
+  bottom: 70%;
+  animation: spin-rotate 20s linear infinite;
+  -webkit-animation: spin-rotate 20s linear infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  backdrop-filter: blur(3px);
+  border-width: 0px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.selo-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/logos/logo-header.png");
+  backdrop-filter: blur(20px); /* Valor do desfoque */
+  z-index: 5;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1000px) {
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+  .sobre-descricao a {
+    margin-top: 18px;
+  }
+  .selo-logo {
+    display: none;
+  }
+  .sobre-bg::before {
+    /* background-image: url("../../img/components/"); */
+    transform: rotate(90deg);
+    background-position: rotate(90deg);
+  }
+}

@@ -11,13 +11,16 @@
   display: flex;
   gap: 2rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .nav-bar-inactive {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
+  .header {
+    margin: 1rem;
+  }
   .nav-menu > a {
     width: 40%;
   }
@@ -35,6 +38,7 @@
     display: flex;
     place-content: center;
     place-items: center;
+    margin: 0;
   }
 
   .nav-menu {

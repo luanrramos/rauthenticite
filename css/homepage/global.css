@@ -2,10 +2,10 @@ body {
   margin: 0px;
   padding: 0px;
   color: #111111;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   background-color: #fafafa;
   position: relative;
-  height: 3000px;
+  height: 6000px;
 }
 
 h1,
@@ -39,4 +39,8 @@ img {
 
 img[src$=".png"] {
   border-radius: 4px;
+}
+
+* {
+  box-sizing: initial;
 }

@@ -1,0 +1,87 @@
+.incentive {
+  background-color: #fafafa;
+  padding: 90px 0;
+  position: relative;
+  background-image: url(../../img/isis-vasconcelos/porque2.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+.incentive div > span {
+  display: block;
+  padding-top: 32px;
+  margin-top: 60px;
+}
+.incentive div > h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.incentive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.incentive-list li {
+  display: flex;
+  gap: 12px;
+}
+.incentive-benefits {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.incentive-benefits li {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.logo-bg {
+  display: inline;
+  position: absolute;
+  top: 0%;
+  z-index: 0;
+}
+
+.incentive > div {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 1400px) {
+  .incentive {
+    background-size: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .incentive {
+    padding: 60px 0;
+    background-position: right;
+    background-size: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .incentive {
+    padding: 30px 0;
+    background-position: bottom;
+    background-size: 80%;
+  }
+  .incentive .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .incentive {
+    padding: 0px 0;
+    padding-bottom: 60px;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: repeat-x;
+  }
+  .incentive-benefits {
+    flex-direction: column;
+  }
+}

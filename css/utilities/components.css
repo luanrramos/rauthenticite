@@ -12,19 +12,24 @@
   background: linear-gradient(#be0003, #8a0002);
   border-radius: 4px;
   box-shadow: 0 10px 16px rgba(139, 0, 3, 0.27);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--cor-1);
-  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  font: 600 1.125rem/1.35 "Inter", sans-serif;
   max-width: max-content;
   transition: 0.3s;
 }
 .botao-transparente {
   padding: 1rem 2rem;
   color: var(--cor-1);
-  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  font: 600 1.125rem/1.35 "Inter", sans-serif;
   transition: 0.3s;
 }
 .botao:hover {
+  background: linear-gradient(hsl(359, 100%, 37%), hsl(359, 100%, 30%));
+  transition: 0.3s;
+  box-shadow: 0 5px 16px rgba(139, 0, 3, 0.27);
+}
+.bg-linear:hover {
   background: linear-gradient(hsl(359, 100%, 37%), hsl(359, 100%, 30%));
   transition: 0.3s;
   box-shadow: 0 5px 16px rgba(139, 0, 3, 0.27);
@@ -83,8 +88,10 @@
   width: 100%;
 }
 
-.mouse-icon{
-  
+.mouse-icon {
+  position: absolute;
+  top: 85%;
+  right: 50%;
 }
 
 @media (max-width: 600px) {

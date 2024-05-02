@@ -1,0 +1,105 @@
+.outros-servicos-bg {
+  background-color: #f7f7f7;
+}
+.outros-servicos {
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.7rem;
+  /* align-items: center; */
+}
+
+.outros-servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 4rem;
+}
+
+.outros-servicos-grid li a {
+  display: grid;
+  gap: 1rem;
+  padding: 48px;
+  background-color: var(--cor-1);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.14);
+  border: 3px solid var(--cor-0);
+  border-radius: 1rem;
+  align-content: start;
+  position: relative;
+  max-width: 300px;
+  height: 250px;
+  transition: 0.3s;
+}
+.outros-servicos-grid li a:hover {
+  border: 3px solid var(--cor-p3);
+  transition: 0.3s;
+}
+.outros-servicos > div {
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+}
+.outros-servicos > ul {
+  align-content: end;
+}
+.outros-servicos-brandings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--cor-2);
+  border-radius: 6px;
+  max-width: 350px;
+  margin-bottom: 2rem;
+}
+
+.outros-servicos-brandings span {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.outros-servicos-brandings img {
+  width: 160px;
+}
+
+@media (max-width: 1200px) {
+  .outros-servicos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .outros-servicos {
+    padding: 60px 0;
+    place-content: center;
+    gap: 3rem;
+  }
+  .outros-servicos > div {
+    gap: 1rem;
+  }
+  .outros-servicos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .outros-servicos-grid li a {
+    max-width: 200px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .outros-servicos div > span {
+    margin-bottom: 0rem;
+  }
+  .outros-servicos-brandings {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0;
+  }
+  .outros-servicos > div a {
+    place-self: center;
+  }
+}
