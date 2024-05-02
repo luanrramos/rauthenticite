@@ -121,6 +121,9 @@
     gap: 3rem;
   }
   .como-funciona {
-    padding: 30px 0;
+    padding: 1rem 0;
+  }
+  .como-funciona-grid {
+    margin: 30px 0;
   }
 }
