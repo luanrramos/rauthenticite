@@ -13,8 +13,7 @@ O escritório R Authenticité tem o propósito de ajudar empresas e criadores re
 - ✅ Acessibilidade
 - ✅ SEO
 - ✅ Controle de versão
-- ✅ Perfomance
-- ✅ Trabalho em Equipe
+- ✅ Performance
 - ✅ HTML semântico
 
 ## 🧩 Tecnologias Utilizadas
