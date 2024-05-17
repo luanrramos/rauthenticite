@@ -27,6 +27,9 @@ O escritório R Authenticité tem o propósito de ajudar empresas e criadores re
   <img width="24" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
   <img width="24" />
+  <img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" height = "40" width = "40" />
+  <img width="24" />
+  <img src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" height = "40" width = "40" />
 </div>
 
 ## ⌛ Status do projeto

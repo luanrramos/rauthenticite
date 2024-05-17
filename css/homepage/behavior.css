@@ -5,7 +5,6 @@
   padding: 60px 0;
   position: relative;
 }
-
 .como-funciona-introducao > span {
   display: block;
   margin-bottom: 1rem;
@@ -104,6 +103,12 @@
 }
 
 @media (max-width: 800px) {
+  #como-funciona-ativo {
+    display: none;
+  }
+  .como-funciona-numeros {
+    display: none;
+  }
   .como-funciona {
     margin-top: 40px;
     padding-bottom: 1rem;

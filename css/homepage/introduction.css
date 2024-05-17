@@ -75,6 +75,11 @@
   .selo {
     display: none;
   }
+  #img-isis {
+    display: grid;
+    max-width: 50%;
+    place-self: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -85,6 +90,11 @@
   }
 }
 @media (max-width: 600px) {
+  #img-isis {
+    display: grid;
+    max-width: 80%;
+    place-self: center;
+  }
   .main {
     margin: 3rem;
   }
